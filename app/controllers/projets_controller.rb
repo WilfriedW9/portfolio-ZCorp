@@ -1,9 +1,10 @@
 class ProjetsController < ApplicationController
-  
+
   def index
+    @projets = Projet.all
   end
 
-  def show
+  def show 
   end
 
 end
