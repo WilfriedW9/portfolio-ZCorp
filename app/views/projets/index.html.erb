@@ -5,4 +5,5 @@
 <h1>Liste des projets:</h1>
 <% @projets.each do |projet| %>
   <li><%= projet.nom %>: <%= projet.descriptionR %></li>
+  <%= projet.descriptionC %>
 <% end %>
