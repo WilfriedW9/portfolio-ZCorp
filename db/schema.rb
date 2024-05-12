@@ -11,6 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_05_12_175600) do
+
   create_table "projets", force: :cascade do |t|
     t.string "nom"
     t.string "images_url"
@@ -22,4 +23,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_12_175600) do
     t.string "images_process_url"
   end
 
+  add_foreign_key "description_completes", "projets"
 end
