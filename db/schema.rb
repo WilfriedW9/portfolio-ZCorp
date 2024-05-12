@@ -10,18 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_12_152428) do
-  create_table "description_completes", force: :cascade do |t|
-    t.string "nom"
-    t.string "textes"
-    t.string "images_url"
-    t.string "string"
-    t.integer "projet_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["projet_id"], name: "index_description_completes_on_projet_id"
-  end
-
+ActiveRecord::Schema[7.1].define(version: 2024_05_12_175600) do
   create_table "projets", force: :cascade do |t|
     t.string "nom"
     t.string "images_url"
@@ -29,6 +18,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_12_152428) do
     t.string "string"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "descriptionC"
+    t.string "images_process_url"
   end
-  add_foreign_key "description_completes", "projets"
+
 end
