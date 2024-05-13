@@ -2,7 +2,7 @@
   border: 0;
   width: 20px;
   height: 20px;
-  border: 1.5px solid rgb(64, 154, 180);
+  border: 1.5px solid #FFB84D;;
   border-radius: 50%;
   position: absolute;
   transition-timing-function: ease-in-out;
@@ -16,7 +16,7 @@
   left: 8px;
   width: 2px;
   height: 2px;
-  border: 1.5px solid rgb(64, 154, 180);
+  border: 1.5px solid #FFB84D;;
   border-radius: 50%;
   position: absolute;
   pointer-events: none;

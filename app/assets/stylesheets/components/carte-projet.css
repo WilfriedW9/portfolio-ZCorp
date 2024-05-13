@@ -1,0 +1,81 @@
+.section-carousel, .carte-projet, .carousel, .carte-titre, .section-description {
+  display: flex;
+}
+
+
+.carte-projet{
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  height: 30rem;
+  width: 60rem;
+}
+
+
+.carte-projet > .section-carousel{
+  height: 100%;
+  width: 50%;
+}
+.carte-projet > .section-description{
+  background-color: rgb(194, 194, 194);
+  color: black;
+  height: 100%;
+  width: 50%;
+  border-radius: 0 5px 5px 0;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-carousel{
+  flex-direction: column;
+}
+
+.carte-titre{
+  background-color: #434343ea;
+  height: 10%;
+  overflow: hidden;
+  color: white;
+  border-radius: 0 0 0 5px;
+  align-items: center;
+}
+
+.titre-projet{
+  display: inline-block;
+  animation: scroll 5s infinite linear
+}
+
+@keyframes scroll {
+  from{
+    transform: translate(-200%);
+  }
+  to{
+    transform: translate(350%);
+  }
+}
+
+.carousel{
+  background: linear-gradient(to top, #7a7a7aea, rgba(101, 0, 0, 0));
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+
+.carousel-nav{
+  width: 7%;
+  border: none;
+  background-color: #21202000;
+  transition: 0.15s;
+}
+
+.carousel-nav:hover{
+  background-color: #5753536f;
+}
+.carousel-nav:active{
+  background-color: #9a95956f;
+}
+
+
+.carousel-nav:nth-child(2n+1){
+  border-radius: 5px 0 0 0;
+}

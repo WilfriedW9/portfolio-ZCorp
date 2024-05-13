@@ -1,6 +1,18 @@
 .btn-projet {
   border-radius: 5px;
-  background-color: #9CAEDD;
+  background-color: var(--color-secondary);
   padding: 2px 5px;
   color: white;
+  width: fit-content;
+  align-self: flex-end;
+  transition: 0.15s;
+}
+.btn-projet:active{
+  color: white;
+}
+
+.btn-projet:hover{
+  color: var(--color-secondary);
+  background-color: white ;
+  box-shadow: 2px 2px rgb(194, 194, 194), 4px 4px var(--color-secondary);
 }
