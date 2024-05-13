@@ -8,6 +8,5 @@
 <% @projets.each do |projet| %>
   <li><%= projet.nom %>: <%= projet.descriptionR %></li>
   <%= projet.descriptionC %>
-  <%= link_to "En savoir plus", projet_path(projet) %>
+  <span class=""><%= link_to "En savoir plus", projet_path(projet) %></span>
 <% end %>
-
