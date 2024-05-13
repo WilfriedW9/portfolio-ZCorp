@@ -1,0 +1,10 @@
+.cta{
+  display: inline-block;
+  margin-top: 2rem;
+  transition: 0.15s;
+}
+
+.cta:hover{
+  color: var(--color-secondary);
+
+}
