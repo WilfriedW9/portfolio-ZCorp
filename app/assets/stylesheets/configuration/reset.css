@@ -18,6 +18,15 @@ a{
   text-decoration: none;
 }
 
+audio {
+  visibility: hidden;
+  position: absolute;
+}
+
+a:visited{
+  color: inherit;
+}
+
 h1{
   font-size: 5rem;
   font-family: var(--font-family-title);
