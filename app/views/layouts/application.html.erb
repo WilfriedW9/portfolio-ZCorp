@@ -7,10 +7,12 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "custom/curseur.js", defer: true %>
   </head>
 
   <body>
   <%= render "shared/header" %>
+  <%= render "shared/curseur" %>
     <%= yield %>
   </body>
 </html>
