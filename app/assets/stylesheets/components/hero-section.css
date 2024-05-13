@@ -2,4 +2,16 @@
   background-color: var(--color-primary);
   height: 60vh;
   color: white;
+  padding-top: 4rem;
+}
+
+.hero-section > .container > p{
+  max-width: 50ch;
+  font-size: 2rem;
+
+}
+
+
+.cta:hover{
+  cursor: pointer;
 }
