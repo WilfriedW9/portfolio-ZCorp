@@ -1,13 +1,26 @@
 <%= javascript_include_tag "custom/projetIndex.js", defer: true %>
 <%# <audio src="/assets/Le Lobby.wav" controls ></audio> %>
 <div class="container">
-  <h1>Projets#index</h1>
-  <p>Find me in app/views/projets/index.html.erb</p>
+  <h1>Liste des projets:</h1>
+  <div class="sub-container">
+    <% @projets.each do |projet| %>
+      <div class="carte-projet">
+        <div class="section-carousel">
+          <div class="carousel">
+            <button class="carousel-nav"><</button>
+            <button class="carousel-nav">></button>
+          </div>
+          <div class="carte-titre">
+          <span class="titre-projet">
+            <h2><%= projet.nom %></h2>
+          </span>
+          </div>
+        </div>
+      <div class="section-description">
+        <div class="description"> <%= projet.descriptionR %></div>
+        <span class="btn-projet"><%= link_to "En savoir plus", projet_path(projet) %></span>
+      </div>
+    </div>
+    <% end %>
+</div>
 
-
-
-<h1>Liste des projets:</h1>
-<% @projets.each do |projet| %>
-  <li><%= projet.nom %>: <%= projet.descriptionR %></li>
-  <span class="btn-projet"><%= link_to "En savoir plus", projet_path(projet) %></span>
-<% end %>
