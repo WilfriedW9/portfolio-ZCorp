@@ -1,9 +1,10 @@
 <div class="header">
-  <h2>ZaloCorp</h2>
-  <div class="link-box">
-  <div class="nav-link"><%= link_to "Accueil", "/" %></div>
-  <div class="nav-link"><%= link_to "Projets", "/projets" %></div>
-  <div class="nav-link">Contact</div>
+  <div class="logo">
+    <h2>Zcorp</h2>
   </div>
-  <div class="linkbox"></div>
+  <div class="link-box">
+  <div class="nav-link"><%= link_to_unless_current "Accueil", "/" %></div>
+  <div class="nav-link"><%= link_to_unless_current "Projets", "/projets" %></div>
+  <div class="nav-link"><%= link_to_unless_current "Contact", "/" %></div>
+  </div>
 </div>

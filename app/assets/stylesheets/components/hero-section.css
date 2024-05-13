@@ -1,0 +1,5 @@
+.hero-section {
+  background-color: var(--color-primary);
+  height: 60vh;
+  color: white;
+}
